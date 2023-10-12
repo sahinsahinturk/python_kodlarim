@@ -1,0 +1,26 @@
+## Eğer x 0'dan büyükse ekrana yaz##
+
+x = 7
+if x > 0:
+    print("{} sayısı 0'dan büyük".format(x))
+
+##Eğer x 0'dan büyük 10'dan küçük eşit ise ekrana yaz ##
+
+x=10
+
+print("-------")
+if x > 0 and x <= 10:
+    print("{} sayısı 0'dan büyük ve 10'dan küçük eşittir.".format(x))
+
+##ELSE YAPISI##
+
+## x sayısı tek se tek çift ise çift yazsın##
+
+x= 14
+
+if x%2==0:
+    print("{} sayısı çifttir.".format(x))
+else:print("{} sayısı tektir.".format(x))
+
+
+
