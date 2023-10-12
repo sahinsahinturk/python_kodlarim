@@ -17,3 +17,21 @@ tospik.lt(90)
 tospik.fd(100)
 
 turtle.mainloop()
+
+-----------------------------------------------------
+
+import turtle
+
+def kare(t,uzunluk):
+
+    for i in range(4):
+        t.fd(uzunluk)
+        t.lt(90)
+
+tospik = turtle.Turtle()
+
+kare(tospik,100)
+kare(tospik,200)
+kare(tospik,300)
+
+turtle.mainloop()
