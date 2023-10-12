@@ -1,0 +1,14 @@
+**Kaplumbaga fonksiyonunu ogreniyorumimport turtle
+
+def kaplumbaga_olustur():
+    tospik =turtle.Turtle()
+    print(tospik)
+    return tospik
+
+tospik = kaplumbaga_olustur()
+
+tospik.fd(100)
+tospik.lt(90)
+tospik.fd(100)
+
+turtle.mainloop()
