@@ -18,3 +18,29 @@ toplam = (vize_puan*0.4) + (final_puan*0.6)
 print("Not ortalamanız: {}".format(toplam))
 
 -----
+##Girilen 3 Yazılı Notunun Ortalamasını Bulan Python Örneği
+
+sinav1=input("Birinci Sınav: ")
+sinav2=input("Ikinci Sınav: ")
+sinav3=input("Ucuncu Sınav: ")
+
+sonuc1=float(sinav1)
+sonuc2=float(sinav2)
+sonuc3=float(sinav3)
+
+toplam = sonuc1 + sonuc2 + sonuc3
+ortalama = toplam / 3
+
+print("Ortalama Sonuç: {}".format(ortalama))
+-----
+
+##Girilen Sayının Pozitif, Negatif, ya da 0 Olduğunu Bulan Python Örneği
+sayi=input("sayiyi gir")
+sayii=float(sayi)
+
+if sayii > 0 :
+    print("Sayi Pozitif")
+elif sayii < 0:
+    print("Sayi Negatif")
+else:
+    print("Sayi 0'a eşit")
