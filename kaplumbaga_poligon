@@ -1,0 +1,14 @@
+## Kaplumbağa Modülü## Poligon çizimi
+import turtle
+
+def kare(t,kenarsayisi,uzunluk):
+    aci = 360 / kenarsayisi
+    for i in range(kenarsayisi):
+        t.fd(uzunluk)
+        t.lt(aci)
+
+tospik = turtle.Turtle()
+
+kare(tospik,6,80)
+
+turtle.mainloop()
