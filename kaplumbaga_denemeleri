@@ -35,3 +35,21 @@ kare(tospik,200)
 kare(tospik,300)
 
 turtle.mainloop()
+
+----------------------------------------------------------
+DÖNGÜ İLE BİR ÖRNEK
+
+import turtle
+
+def kare(t,uzunluk):
+
+    for i in range(4):
+        t.fd(uzunluk)
+        t.lt(90)
+
+tospik = turtle.Turtle()
+
+for i in range(10):
+    kare(tospik, 100 + i * 20)
+
+turtle.mainloop()
