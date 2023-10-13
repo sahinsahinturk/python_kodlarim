@@ -50,6 +50,27 @@ def mesafe(x1,y1,x2,y2):
     print("kareler",uzaklik)
     return uzaklik
 
+------------------------------------
+#Örnek 10: Kullanıcının girdiği boy ve ağırlık değerlerine göre vücut kitle indeksini (VKİ=ağırlık/(boy*boy), boymetre cinsinden verilmeli) hesaplayınız.
+from typing import Any
+
+#VKİ 18 ile < 25 aralığındaysa normal, VKİ 25 ile <30 aralığındaysa kilolu, VKİ 30 ve daha yüksekse obez, VKİ 35 ve daha fazlaysa ciddi obez olarak kabul edilir. VKİ’ni hesaplayarak kişinin durumunu yazdırınız
+
+boy = input("Boy Gir(m):")
+kilo = input("Kilo Gir(kg):")
+b=float(boy)
+k=float(kilo)
+vki=k/(b**2)
+print("",vki)
+if 18<vki and vki<=25:
+    print("Normal")
+elif 25<vki and vki<=30:
+    print("Kilolu")
+elif vki>30:
+    print("Aşırı Kilolu")
+else:
+    print("Zayıf")
+
 
 def dairenin_alani(r):
     alan= math.pi * r**2
