@@ -36,11 +36,27 @@ print("Ortalama Sonuç: {}".format(ortalama))
 
 ##Girilen Sayının Pozitif, Negatif, ya da 0 Olduğunu Bulan Python Örneği
 sayi=input("sayiyi gir")
-sayii=float(sayi)
 
-if sayii > 0 :
-    print("Sayi Pozitif")
-elif sayii < 0:
-    print("Sayi Negatif")
-else:
-    print("Sayi 0'a eşit")
+--------------
+İki Nokta Arası Mesafe ve bu mesafeyi yarıcap kabul eden dairenin alanı
+
+import math
+
+
+def mesafe(x1,y1,x2,y2):
+    dx=x2-x1
+    dy=y2-y1
+    kareler = dx**2 + dy**2
+    uzaklik = kareler**0.5
+    print("kareler",uzaklik)
+    dr=uzaklik
+    return dr
+
+
+def dairenin_alani(r):
+    alan= math.pi * r**2
+    print("Dairenin alani:",alan)
+    return alan
+
+
+mesafe(2,5,10,20)
