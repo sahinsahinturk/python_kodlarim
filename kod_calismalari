@@ -103,5 +103,16 @@ while n<21:
         print("", x)
         n = n + 1
 
+---------------------------------------------------------------------------
+##girilen sayının tüm carpanlarını bulma
 
+sayi=input("Sayıyı gir")
+x=1
+dongu =int(sayi)+1
+while x<dongu:
+    if int(sayi)%x==0:
+        print("Tam Bolunebilir",x)
+        x=x+1
 
+    else:
+        x=x+1
