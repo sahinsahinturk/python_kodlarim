@@ -1,0 +1,20 @@
+konsol=input("1-Kayıt\n2-Üye Girişi\n3-Üyelik Silme\n4-Üyeleri Listele")
+konsol=int(konsol)
+uyeid=1
+if int(konsol)==1:
+    print("Kayıt")
+    ad=input("İsim Gir:")
+    soyad=input("Soyad Gir:")
+    uyeid=uyeid+1
+    print("Kayıt Tamamlandı...")
+    print("Ad:",ad)
+    print("Soyad:",soyad)
+    print("Üye No:",uyeid)
+    ##Listeleme Öğrenilecek##
+        
+elif konsol== 2:
+    print("Üye Girişi")
+if konsol==3:
+    print("Üyelik Silme")
+elif konsol==4:
+    print("Üyeleri Listele")
