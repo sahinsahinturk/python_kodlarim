@@ -116,3 +116,63 @@ while x<dongu:
 
     else:
         x=x+1
+---------------------------------------------------------------------------
+##Üyelik Sistemi (Bitmedi)
+konsol=input("1-Kayıt\n2-Üye Girişi\n3-Üyelik Silme\n4-Üyeleri Listele")
+konsol=int(konsol)
+uyeid=1
+if int(konsol)==1:
+    print("Kayıt")
+    ad=input("İsim Gir:")
+    soyad=input("Soyad Gir:")
+    uyeid=uyeid+1
+    print("Kayıt Tamamlandı...")
+    print("Ad:",ad)
+    print("Soyad:",soyad)
+    print("Üye No:",uyeid)
+    ##Listeleme Öğrenilecek##
+        
+elif konsol== 2:
+    print("Üye Girişi")
+if konsol==3:
+    print("Üyelik Silme")
+elif konsol==4:
+    print("Üyeleri Listele")
+
+--------------------------
+##Girilen sayı asal mı değil mi?
+sayi=input("Bir Sayi Giriniz:")
+sayac=0
+i=1
+son=int(sayi)+1
+while i < son:
+    if int(sayi)%i==0:
+        sayac+=1
+        i+=1
+    else:
+        i+=1
+        
+if sayac<3 and sayac>1:
+    print("Sayi asal")
+else:
+    print("Sayı Asal Değil")
+    
+--------------------------------
+##Girilen sayı mükemmel sayı mı değil mi bul.
+s=input("Bir Sayi Giriniz:")
+toplam=0
+sayac=0
+i=1
+sayi=int(s)
+while i < sayi:
+    if sayi%i==0:
+        toplam=toplam+i
+        i+=1
+    else:
+        i+=1
+if toplam==sayi:
+    print("Sayı Mükemmel Sayı")
+else:
+    print("Sayı Mükemmel Sayı Değil")
+    
+    
