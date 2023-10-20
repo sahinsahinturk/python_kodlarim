@@ -1,0 +1,26 @@
+# Cümle içinde harf kaç kez geçmiş
+
+cumle=input("Cümleyi Gir")
+uzunluk=len(cumle)
+indx=uzunluk-1
+i=0
+j=0
+print(uzunluk)
+print(indx)
+while i < uzunluk:
+    sayac=0   
+    a=cumle[i]
+    harf=str(a)
+    print("birinci harf",harf)
+    while j<uzunluk:
+        b=cumle[j]
+        harf2=str(b)
+        print("ikinci harf",harf2)
+        if harf==harf2:
+            sayac=sayac+1
+            print("sayac:",sayac)
+            j=j+1
+        else:
+            j=j+1
+    i=i+1
+    print("{0} harfinden {1} tane var".format(a,sayac))
