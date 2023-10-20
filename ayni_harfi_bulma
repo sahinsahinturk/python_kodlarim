@@ -1,6 +1,6 @@
 # Cümle içinde harf kaç kez geçmiş
 
-cumle=input("Cümleyi Gir")
+cumle=input("Cümleyi Gir\n")
 uzunluk=len(cumle)
 indx=uzunluk-1
 i=0
