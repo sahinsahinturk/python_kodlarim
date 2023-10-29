@@ -1,20 +1,45 @@
-konsol=input("1-Kayıt\n2-Üye Girişi\n3-Üyelik Silme\n4-Üyeleri Listele")
-konsol=int(konsol)
-uyeid=1
-if int(konsol)==1:
-    print("Kayıt")
-    ad=input("İsim Gir:")
-    soyad=input("Soyad Gir:")
-    uyeid=uyeid+1
-    print("Kayıt Tamamlandı...")
-    print("Ad:",ad)
-    print("Soyad:",soyad)
-    print("Üye No:",uyeid)
-    ##Listeleme Öğrenilecek##
-        
-elif konsol== 2:
-    print("Üye Girişi")
-if konsol==3:
-    print("Üyelik Silme")
-elif konsol==4:
-    print("Üyeleri Listele")
+uyead = []
+uyesoyad = []
+uyeid = []
+id = 0
+sid=0
+while True:
+
+    konsol = input("1-Kayıt\n2-Üye Girişi\n3-Üyelik Silme\n4-Üyeleri Listele\n")
+    konsol = int(konsol)
+
+    if int(konsol) == 1:
+        print("Kayıt")
+        ad = input("İsim Gir:")
+        soyad = input("Soyad Gir:")
+        idm = id
+        uyead + [ad]
+        uyesoyad + [soyad]
+        uyeid + [id]
+        print("Kayıt Tamamlandı...")
+        print("Ad:", ad)
+        print("Soyad:", soyad)
+        print("Üye No:", id)
+        print("Yeni Üye Eklendi:\n Ad:{0}\nSoyad:{1}\nID:{2}".format(ad, soyad, idm))
+        uyead.append(ad)
+        uyesoyad.append(soyad)
+        uyeid.append(id)
+        id = id + 1
+
+    elif konsol == 2:
+        print("Üye Girişi")
+    if konsol == 3:
+        print("Üyelik Silme")
+        sid=input("Üye ID'sini giriniz:")
+        del uyead[sid]
+        del uyesoyad[sid]
+        del uyeid[sid]
+        print("Üye Silindi...")
+    elif konsol == 4:
+        uyeid.pop(sid)
+        uyesoyad.pop(sid)
+        uyeid.pop(sid)
+        print(".:Üyeler:.\n")
+        print(uyead)
+        print(uyesoyad)
+        print(uyeid)
